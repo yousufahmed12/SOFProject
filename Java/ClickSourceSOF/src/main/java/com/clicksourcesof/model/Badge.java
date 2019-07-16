@@ -6,7 +6,7 @@ public class Badge {
 	private int silver;
 	private int gold;
 	
-	Badge(){}
+	public Badge(){}
 	
 	public int getBronze() {
 		return bronze;

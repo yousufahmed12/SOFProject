@@ -1,5 +1,6 @@
 package com.clicksourcesof.services;
 
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,13 @@ public class SOFJpa {
 	{
 		Optional<BadgeModel> ob = badgeRepository.findById(id);
 		
-		return ob.get().getBadge();
+		try {
+			return ob.get().getBadge();
+		} catch (NoSuchElementException e)
+		{
+			return new Badge();
+		}
+		
 			
 	}
 }
