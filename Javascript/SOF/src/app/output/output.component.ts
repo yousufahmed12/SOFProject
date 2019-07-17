@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import { Component, OnInit, ComponentFactoryResolver } from '@angular/core';
 import { StackOverflowService } from '../stack-overflow.service';
 
@@ -8,6 +8,9 @@ import { StackOverflowService } from '../stack-overflow.service';
   styleUrls: ['./output.component.css']
 })
 export class OutputComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
+  }
   input;
   output: any;
 
@@ -23,7 +26,7 @@ export class OutputComponent implements OnInit {
   //  service.getCommentsData();
   
    }
-=======
+// =======
 // import { Component, OnInit } from '@angular/core';
 // import { StackOverflowService } from '../stack-overflow.service';
 
@@ -39,7 +42,7 @@ export class OutputComponent implements OnInit {
 //       console.log(x);
 //     });
 //    }
->>>>>>> 70edd0fc59a30aa9e5791c1688a29835c726be4d
+// >>>>>>> 70edd0fc59a30aa9e5791c1688a29835c726be4d
 
 //   ngOnInit() {
 //   }
@@ -64,3 +67,4 @@ export class OutputComponent implements OnInit {
   }
 
 // }
+}
