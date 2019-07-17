@@ -7,10 +7,10 @@ import { StackOverflowService } from '../stack-overflow.service';
   templateUrl: './output.component.html',
   styleUrls: ['./output.component.css']
 })
-export class OutputComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
-  }
+export class OutputComponent  {
+  // ngOnInit(): void {
+  //   throw new Error("Method not implemented.");
+  // }
   input;
   output: any;
 
@@ -44,8 +44,8 @@ export class OutputComponent implements OnInit {
 //    }
 // >>>>>>> 70edd0fc59a30aa9e5791c1688a29835c726be4d
 
-//   ngOnInit() {
-//   }
+  ngOnInit() {
+  }
 
   save() {
     this.service.save(this.input).subscribe(response => {
