@@ -3,12 +3,35 @@
 
 <!-- {{output}} -->
 
+        
+
+
 <input type="text" [(ngModel)]='input'>
 <br>
 {{input}}
 
-<button (click)="save()">Save</button>
-<br>
-<button (click)="getCandidate()">Gets candidae 327</button>
-<br>
-<button (click)="updateCandidate()">Update 427</button>
+<div class="container">
+    <h2>Employer and Candidate</h2>
+<hr/>
+Click here to save !
+<button (click)="save()" class="btn btn-primary" style="color: red;">Save </button>
+<hr/>
+CLick here to get the candidate 
+<!-- <br> -->
+<button (click)="getCandidate()" class="btn btn-primary"  style="color: red;">Gets candidate 327</button>
+<!-- <br> -->
+<hr/>
+Click her to Update the candidate 
+<button (click)="updateCandidate()" class="btn btn-primary" style="color: red;">Update 427</button>
+<hr/>
+</div>
+
+
+
+
+
+
+
+
+ 
+ 
