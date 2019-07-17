@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+// import { Injectable } from '@angular/core';
+// import { HttpClient } from '@angular/common/http';
+// import { Observable } from 'rxjs';
 
+<<<<<<< HEAD
 @Injectable({
   providedIn: 'root'
 })
@@ -15,9 +16,16 @@ export class StackOverflowService {
 
   comments: Observable<any>;
   commentsArr;
+=======
+// @Injectable({
+//   providedIn: 'root'
+// })
+// export class StackOverflowService {
+>>>>>>> 70edd0fc59a30aa9e5791c1688a29835c726be4d
 
-  constructor(private http: HttpClient) { }
+//   constructor(private http: HttpClient) { }
 
+<<<<<<< HEAD
   // get badges Already done
   getBadgesData(id: string) {
     this.badges = this.http.get('https://api.stackexchange.com/2.2/users/' + id + '?order=desc&sort=reputation&site=stackoverflow');
@@ -76,3 +84,9 @@ export class StackOverflowService {
     return this.http.get('http://localhost:8090/api/candidate/' + id);
   }
 }
+=======
+//   getData(): Observable<any> {
+//     return this.http.get('https://api.stackexchange.com/2.2/users/571194?order=desc&sort=reputation&site=stackoverflow');
+//   }
+// }
+>>>>>>> 70edd0fc59a30aa9e5791c1688a29835c726be4d

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit, ComponentFactoryResolver } from '@angular/core';
 import { StackOverflowService } from '../stack-overflow.service';
 
@@ -22,9 +23,26 @@ export class OutputComponent implements OnInit {
   //  service.getCommentsData();
   
    }
+=======
+// import { Component, OnInit } from '@angular/core';
+// import { StackOverflowService } from '../stack-overflow.service';
 
-  ngOnInit() {
-  }
+// @Component({
+//   selector: 'app-output',
+//   templateUrl: './output.component.html',
+//   styleUrls: ['./output.component.css']
+// })
+// export class OutputComponent implements OnInit {
+
+//   constructor(private service: StackOverflowService) {
+//     service.getData().subscribe(x=>{
+//       console.log(x);
+//     });
+//    }
+>>>>>>> 70edd0fc59a30aa9e5791c1688a29835c726be4d
+
+//   ngOnInit() {
+//   }
 
   save() {
     this.service.save(this.input).subscribe(response => {
@@ -45,4 +63,4 @@ export class OutputComponent implements OnInit {
     // });
   }
 
-}
+// }
