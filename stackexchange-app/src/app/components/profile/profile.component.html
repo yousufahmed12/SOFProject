@@ -1,0 +1,81 @@
+     
+    <div class="container w3-red">
+        <hr />
+        <h2>The StackOverflow lookUp</h2>
+        <hr />
+    </div>    
+     
+    <a mat-button routerLink="/employer-view">Go to Employer-view</a>
+<mat-card class="example-card">
+            <mat-form-field class="md-form" appearance="fill">
+                <mat-label>Fill Url field</mat-label>
+                <input  matInput type="text" placeholder="Search Stack User URL" [(ngModel)]="input" class="form-control" id="search">
+                <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="getAll()" matTooltip="Search">
+                        <mat-icon>search</mat-icon>
+                </button>
+            </mat-form-field>
+            
+    <br>
+    <mat-card-header class = "header" >
+
+
+        
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Stack Card</mat-card-title>
+        <mat-card-subtitle>{{stackOverflowId}}</mat-card-subtitle>
+        
+    
+    </mat-card-header>
+    <mat-card-content >
+        
+        <mat-accordion class="showcontent">
+     
+    <mat-expansion-panel *ngIf="ready" (opened)="panelOpenState = false" (closed)="panelOpenState = true">
+        <mat-expansion-panel-header>
+        <mat-panel-title >
+            Click to View user info
+        </mat-panel-title>
+        <mat-panel-description >
+    
+            Show {{panelOpenState ? 'More' : 'Less'}}
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        
+        
+        <cdk-virtual-scroll-viewport itemSize="" class="example-viewport">
+        
+            <div class="badges">
+                        
+
+                        <button mat-button class="theBadge"> <span> Gold : </span>{{badgeList[0]}} </button>
+                        <button mat-button class="theBadge2"> <span> Silver : </span>{{badgeList[1]}} </button>
+                        <button mat-button class="theBadge3"> <span> Bronze : </span>{{badgeList[2]}} </button>
+            </div>
+            <div class="">
+                    <strong> # of Answers : </strong>{{answers}}
+                    <br>
+                    <strong> # of Comments : </strong>{{comment}}
+         
+            
+                   
+            </div>
+    
+        
+        </cdk-virtual-scroll-viewport>
+    
+    </mat-expansion-panel>
+    
+    
+    </mat-accordion>
+
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-icon-button (click)="save()" aria-label="Save Icon" matTooltip="Save">
+                <mat-icon>cloud_upload</mat-icon>
+        </button>
+    </mat-card-actions>
+    </mat-card>
+    
+    
+
+    

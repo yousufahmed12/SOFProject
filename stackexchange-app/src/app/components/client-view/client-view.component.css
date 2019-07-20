@@ -1,0 +1,63 @@
+.search-form {
+	padding-top: 50px;
+}
+.example-card {
+	max-width: 450px;
+	background-color: cornflowerblue;
+	height: auto;
+	}
+	
+	.example-header-image {
+	  background-image: url('data:image/png;base64,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');
+	  background-size: cover;
+	
+  }
+	
+	.example-viewport {
+	
+	height: auto;
+	max-width: 100%;
+	padding: 60px;
+	
+	}
+	
+	.showcontent{
+		background-color: gray;
+		
+	}
+	img{
+	  height: 300px;
+	  
+	}
+	.example-item {
+	  height: 50px;
+	}
+
+	.theBadge {
+		background-color: gold;
+
+	}
+
+	.theBadge2 {
+		background-color: silver;
+
+	}
+
+	.theBadge3 {
+		background-color:bisque;
+
+	}
+	div.respond {
+		display: inline-flex, inline; /* the default for span */
+		padding: 5px;
+		border: 1px solid blue;  
+		background-color: yellow;
+		
+	  }
+	  .md-form{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	
